@@ -2,7 +2,7 @@
 // 
 // Interface definition for linked list.
 //
-// <Author>
+// Priyanka Ghimire
 
 #include <stdbool.h>
 
@@ -14,15 +14,15 @@ typedef int elem;
  * next node in the list. The last element in the list should have NULL as its
  * next pointer. */
 struct node {
-	elem value;
-	struct node *next;
+  elem value;
+  struct node *next;
 };
 typedef struct node node_t;
 
 /* Defines the list structure, which simply points to the first node in the
  * list. */
 struct list {
-	node_t *head;
+  node_t *head;
 };
 typedef struct list list_t;
 
@@ -37,7 +37,7 @@ void list_print(list_t *l);
 
 /* returns string of List */
 char* listToString(list_t *l);
-/* returns node from heap */
+
 node_t * getNode(elem value);
 
 /* Returns the length of the list. */
